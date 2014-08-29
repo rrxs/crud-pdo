@@ -75,15 +75,6 @@ class Database extends config {
     return $this->_stmt->fetchAll(PDO::FETCH_OBJ);
   }
 
-  /*
-   * Retorna a primeira linha do resultado
-   */
-
-  public function single() {
-    $this->execute();
-    return $this->_stmt->fetch(PDO::FETCH_OBJ);
-  }
-
   public function rowCount() {
     return $this->_stmt->rowCount();
   }
