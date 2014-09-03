@@ -1,6 +1,6 @@
 <?php
 
-class CRUD {
+class SQL {
   /*
    * insert
    */

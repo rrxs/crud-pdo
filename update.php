@@ -5,7 +5,7 @@ include("layout/_header.php");
 $table = "contact_list";
 
 if (!isset($_POST['submit'])) {
-  if ($contact = CRUD::select($table, array("id" => $_GET['id']))) {
+  if ($contact = SQL::select($table, array("id" => $_GET['id']))) {
     $contact = get_object_vars($contact[0]);
     foreach ($contact as $key => $value) {
       $$key = $value;
@@ -15,7 +15,7 @@ if (!isset($_POST['submit'])) {
   foreach ($_POST as $key => $value) {
     $$key = $value;
   }
-  $update = CRUD::update($table, array("name" => $name, "email" => $email, "phone" => $phone), array("id" => $id));
+  $update = SQL::update($table, array("name" => $name, "email" => $email, "phone" => $phone), array("id" => $id));
 }
 ?>
 <h3>Editar</h3>

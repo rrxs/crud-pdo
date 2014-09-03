@@ -11,6 +11,7 @@ class Database extends config {
    */
 
   public function __construct() {
+    $this->makeConfig();
     $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
     $options = array(
         PDO::ATTR_PERSISTENT => true,

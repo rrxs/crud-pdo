@@ -5,7 +5,7 @@ include("layout/_header.php");
 <h3>Contatos</h3>
 <hr>
 <?php
-$contacts = CRUD::find_all("contact_list");
+$contacts = SQL::find_all("contact_list");
 if ($contacts):
   ?>
   <table class="table table-striped table-hover">
