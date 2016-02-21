@@ -2,7 +2,7 @@
 </div>
 
 <div class="footer">
-  <p>&copy; by robson</p>
+  <p>&copy;</p>
 </div>
 
 </div> <!-- /container -->
